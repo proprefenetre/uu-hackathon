@@ -14,14 +14,14 @@ def main(keywords: List[str],
     pytrend.build_payload(kw_list=keywords, geo=geo)
     # Interest Over Time
 
-    # interest_over_time_df = pytrend.interest_over_time()
-    # pprint(interest_over_time_df.tail())
+    interest_over_time_df = pytrend.interest_over_time()
+    pprint(interest_over_time_df.tail())
 
     # Interest by Region
-    # interest_by_region_df = pytrend.interest_by_region()
-    # print(interest_by_region_df.head())
+    interest_by_region_df = pytrend.interest_by_region()
+    print(interest_by_region_df.head())
 
-    # # Related Queries, returns a dictionary of dataframes
+    # Related Queries, returns a dictionary of dataframes
     related_queries_dict = pytrend.related_queries()
     print(related_queries_dict)
 
